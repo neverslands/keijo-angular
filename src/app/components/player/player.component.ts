@@ -11,8 +11,7 @@ export class PlayerComponent implements OnInit {
 
   players: Player[] = [];
 
-  constructor(private playerService: PlayerService) {
-  }
+  constructor(private playerService: PlayerService) {}
 
   ngOnInit() {
     this.playerService.getPlayers().subscribe(all => {

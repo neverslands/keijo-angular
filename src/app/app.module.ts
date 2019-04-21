@@ -10,6 +10,7 @@ import { PlayerComponent } from './components/player/player.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddplayerComponent } from './components/addplayer/addplayer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DetailplayerComponent } from './components/detailplayer/detailplayer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     AccueilComponent,
     PlayerComponent,
-    AddplayerComponent
+    AddplayerComponent,
+    DetailplayerComponent
   ],
   imports: [
     BrowserModule,

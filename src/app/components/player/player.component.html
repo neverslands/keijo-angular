@@ -1,11 +1,12 @@
-<p>
-  List of Keijo
-</p>
+<h2>
+  List of Keijo players
+</h2>
 
-<div>
+<div id="listplayer">
   <ul>
-    <li *ngFor="let player of players">
+    <div id="player" *ngFor="let player of players">
       {{player.prenom}} {{player.nom}}
-    </li>
+        <button type="button" [routerLink]="['/detailplayer', player.id]"> Détails </button>
+    </div>
   </ul>
 </div>

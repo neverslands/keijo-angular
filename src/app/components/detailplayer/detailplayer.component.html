@@ -1,0 +1,21 @@
+<div *ngIf="player$ | async as player">
+  <div>
+    <label>Id: </label>{{ player.id }}
+  </div>
+
+  <div>
+    <label>Nom: </label> {{player.nom}}
+  </div>
+
+  <div>
+    <label>Prénom: </label> {{player.prenom}}
+  </div>
+
+  <div>
+    <label>Style: </label> {{player.style}}
+  </div>
+
+  <p>
+    <button (click)="gotoPlayers(player)">Back</button>
+  </p>
+</div>
