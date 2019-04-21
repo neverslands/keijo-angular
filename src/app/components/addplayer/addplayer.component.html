@@ -1,0 +1,17 @@
+<form [formGroup]="addPlayerForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for=""></label>
+    <input type="text" formControlName="nom">
+  </div>
+  <div>
+    <label for=""></label>
+    <input type="text" formControlName="prenom">
+  </div>
+  <div>
+    <label for=""></label>
+    <input type="text" formControlName="style">
+  </div>
+  <div>
+    <input type="submit" formControlName="Ajouter">
+  </div>
+</form>
