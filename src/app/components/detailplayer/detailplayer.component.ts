@@ -29,6 +29,12 @@ export class DetailplayerComponent implements OnInit {
   gotoPlayers(player: Player) {
     let playerID = player ? player.id : null;
 
-    this.router.navigate(['/player', {id: playerID, foo: 'foo'}]);
+    this.router.navigate(['/player']);
+  }
+
+  deletePlayer(id: number) {
+    this.playerService
+      .deletePlayer(id)
+      .subscribe( data => console.log("OK"), error => console.log("KO"));
   }
 }

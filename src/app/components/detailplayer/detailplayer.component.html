@@ -15,7 +15,10 @@
     <label>Style: </label> {{player.style}}
   </div>
 
-  <p>
-    <button (click)="gotoPlayers(player)">Back</button>
-  </p>
+  <div>
+    <ul>
+      <button (click)="gotoPlayers(player)">Retour</button> -
+      <button (click)="deletePlayer(player.id)">Supprimer</button>
+    </ul>
+  </div>
 </div>
