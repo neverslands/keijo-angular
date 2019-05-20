@@ -11,11 +11,16 @@ export class PlayerComponent implements OnInit {
 
   players: Player[] = [];
 
-  constructor(private playerService: PlayerService) {}
+  nom: string;
+
+  constructor(private playerService: PlayerService){
+  }
 
   ngOnInit() {
     this.playerService.getPlayers().subscribe(all => {
       this.players = all;
+
+      this.nom = this.players[0].nom;
     })
   }
 }
